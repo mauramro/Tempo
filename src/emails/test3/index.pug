@@ -1,0 +1,162 @@
+extends ../../layout/main.pug
+
+block variables
+  -var fallback = "Open Sans, Helvetica, Arial, sans-serif"
+  -var title = "Email Template"
+  -var white = "#ffffff"
+  -var max_w = 600
+  -var mob = 480
+  -var img_path = "./img/"
+  -var bg_color= "#eeeeee"
+  -var externalFonts = []
+block conditionals
+block styles
+  style(type="text/css")
+    include:scss(outputStyle="compressed") ./styles/inline.scss
+    include:clean-css ./styles/index.css
+
+block content
+
+  // CONTAINER TABLE
+  table(width="100%")&attributes(tableAtt)
+    tr
+      td(align="center" style=`background-color: ${bg_color};` bgcolor=bg_color)
+        //  WRAPPER TABLE
+        table(align="center" width=max_w class="mobile-table")&attributes(tableAtt)
+          
+          // HERO
+          tr
+            td(align="center")
+              img(src=img_path+"hero.jpg" alt="Hero img" width="100%" height="100%")
+                
+          tr
+            td&attributes(tdCenter)
+              table(width="100%")&attributes(tableAtt)
+                tr
+                  td
+                    table&attributes(tableAtt)
+                      tr
+                        td(style="padding-right: 40px;" class="mobile-block")
+                          <a href="https://placeholder.com"><img src="http://via.placeholder.com/250x150"></a>
+                        td
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                tr
+                  td
+                    table&attributes(tableAtt)
+                      tr
+                        td
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        td(style="padding-left: 40px;")
+                          <a href="https://placeholder.com"><img src="http://via.placeholder.com/250x150"></a>
+          //  INTRO   
+          tr
+            td(align="center" style="padding-top:40px;padding-bottom:40px;" class="mobile-padding")
+              table(width="100%" class="mobile-table")&attributes(tableAtt)
+                tr
+                  td(align="center")
+                    table(width="100%")&attributes(tableAtt)
+                      tr
+                        td(align="center" class="mobile-block")
+                          img(src=img_path+"box.png" alt="Hero img" width="150" height="165")
+                        td(style="padding-left:80px" class="mobile-block mobile-remove-padding")
+                          span presents
+                          h2(style="padding:0;margin:0;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;color: #D83826;font-size: 44px;font-weight: 100;line-height: 115%") The Works of Edouard Manet
+                tr
+                  td(style="padding-top:40px;")
+                    p(style="color: #606060;font-size: 18px;line-height: 150%") Starting on October 12th and running for three weeks, square gallery is proud and excited to display a selection of 6 pieces of the work of Édouard Manet, the French master painter of the great Impressionist and Realist movements of the 17th century.
+                    
+          //  Call to action btn
+          tr
+            td(align="center" style="background-color: #D83826;padding:40px" class="mobile-padding")
+              table(width="100%" style="color:#ffffff")&attributes(tableAtt)
+                tr
+                  td(align="center" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;color: #FFFFFF;font-size: 16px;line-height: 150%;padding-bottom: 40px;text-align: center;")
+                    h3(style="margin: 0;padding: 0;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;color: #FFFFFF;font-size: 30px;font-weight: 100;line-height: 115%;text-align: center;")  The Works of Édouard Manet: #[br] A Live Tour With Clémence Rousseau
+                    p Friday nights at 8:00PM throughout the exhibition, French art critic and Manet expert Clémence Rousseau will be examining the 6 pieces featured, providing deep insights into Manet’s genius and his beautiful artwork. Register early, as space is limited.
+                tr
+                  td(align="center")
+                    table(style="background-color: #F0F0F0;border-radius: 4px;box-shadow: 0 5px 0 #A22A1C;")&attributes(tableAtt)
+                      tr
+                        td(style="padding-top: 20px;padding-right: 40px;padding-bottom: 20px;padding-left: 40px;color: #D83826;display: block;font-size: 24px;font-weight: bold;")
+                          a(href="#" style="color: #D83826;text-decoration:none") Register Now
+          // Events
+          tr
+            td(align="center" style="padding-top:40px;padding-bottom:40px;" class="mobile-padding")
+              table(width="100%" style="border-top:1px solid grey;border-bottom:1px solid grey")&attributes(tableAtt)
+                tr
+                  td(align="center" style="padding:40px;" class="mobile-padding")
+                    table()&attributes(tableAtt)
+                      tr
+                        td
+                          h3 Upcoming Events
+                      tr
+                        td
+                          table()&attributes(tableAtt)
+                            tr
+                              td(valign="top")
+                                table(style="width:110px")&attributes(tableAtt)
+                                  tr
+                                    td(align="center" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;background-color: #D83826;color: #FFFFFF;font-size: 18px;font-weight: bold;line-height: 100%;padding: 10px;")
+                                      span NOV
+                                  tr
+                                    td(align="center" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;background-color: #FFFFFF;color: #404040;font-size: 48px;font-weight: bold;line-height: 100%;padding: 15px;")
+                                      span 7
+                              td(style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;color: #606060;font-size: 16px;line-height: 125%;padding-left: 20px;")
+                                h3(style="margin: 0;padding: 0;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;color: #D83826;font-size: 30px;font-weight: 100;line-height: 115%;text-align: left;") localArTLanta
+                                strong Running November 7 through December 14
+                                p(style="margin:0;padding:0;") An exhibition of Atlanta's finest local artists in a broad selection of media ranging from painting to sculpture to perfomance art.
+          // Gallery
+          tr
+            td(align="center")
+              table(width="100%" style="border:1px solid grey;background-color:#ffffff;" class="mobile-padding")&attributes(tableAtt)
+                tr
+                  td(style="padding:40px;" class="")
+                    table&attributes(tableAtt)
+                      tr
+                        td(align="left" style="padding-bottom:40px;")
+                          h3(style="margin:0;padding:0;") Support square gallery
+                      tr
+                        td(width="100%")
+                          table(width="100%;")&attributes(tableAtt)
+                            tr
+                              td(width="50%" style="padding-right: 10px;" class="mobile-block mobile-table mobile-remove-padding")
+                                table()&attributes(tableAtt)
+                                  tr
+                                    td
+                                      img(src=img_path+"item1.png" alt="Hero img" width="110" height="150")
+                                    td(style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;color: #606060;font-size: 16px;line-height: 110%;padding-left: 10px;" width="100%")
+                                      span Art Print: #[br]
+                                      strong Berthe Morisot With A Bouquet#[br] of Violets#[br]
+                                      span 11"x7" - $29.99#[br]#[br]
+                                      table(width="100%" style="background-color: #D83826;border-radius: 4px;box-shadow: 0 5px 0 #A22A1C;")&attributes(tableAtt)
+                                        tr
+                                          td(style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;color: #F0F0F0;font-size: 16px;font-weight: bold;line-height: 100%;letter-spacing: -1px;padding: 10px;text-align: center;text-decoration: none;")
+                                            a(style="color: #F0F0F0;font-size: 16px;font-weight: bold;line-height: 100%;letter-spacing: -1px;padding: 10px;text-align: center;text-decoration: none;") Purchase
+                                      
+                              td(width="50%" style="padding-left: 10px;" class="mobile-block mobile-table mobile-remove-padding")
+                                table()&attributes(tableAtt)
+                                  tr
+                                    td
+                                      img(src=img_path+"item2.png" alt="Hero img" width="110" height="150")
+                                    td(style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;color: #606060;font-size: 16px;line-height: 110%;padding-left:10px;" width="100%")
+                                      span T-shirt: #[br]
+                                      strong square gallery#[br] Logo Tee#[br]
+                                      span 8 Sizes - $19.99#[br]#[br]#[br]
+                                      table(width="100%" style="background-color: #D83826;border-radius: 4px;box-shadow: 0 5px 0 #A22A1C;")&attributes(tableAtt)
+                                        tr
+                                          td(style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;color: #F0F0F0;font-size: 16px;font-weight: bold;line-height: 100%;letter-spacing: -1px;padding: 10px;text-align: center;text-decoration: none;")
+                                            a(style="color: #F0F0F0;font-size: 16px;font-weight: bold;line-height: 100%;letter-spacing: -1px;padding: 10px;text-align: center;text-decoration: none;") Purchase
+          // Footer
+          tr
+            td(align="center" style="background-color: #424145;padding:40px;color: #AAAAAA;")
+              table(width="100%")&attributes(tableAtt)
+                tr
+                  td(align="center")
+                    p As always, everyone at square gallery thanks you#[br] for your support. We couldn't exist without you.
+                tr
+                  td(align="center")
+                    span © 2013 square gallery. • 1551 Peachtree Street NW • Atlanta, Georgia 30318#[br]#[br]
+                    a(href="#" style="color: #D83826;text-decoration:none") unsubscribe from list&nbsp;&nbsp;&nbsp;&nbsp; 
+                    a(href="#" style="color: #D83826;text-decoration:none") set email preferences&nbsp;&nbsp;&nbsp;&nbsp;
+                    a(href="#" style="color: #D83826;text-decoration:none") view in browser
+          //-     include ../../includes/modules/footer.pug

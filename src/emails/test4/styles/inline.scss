@@ -1,0 +1,17 @@
+@import "variables.scss";
+
+.white{
+  color: $white;
+}
+
+.f_normal{
+  font-weight: 400;
+}
+
+.f_bold{
+  font-weight: 800;
+}
+
+sup {
+  line-height: 0; font-size: 65%; vertical-align: super; mso-text-raise: 60%;
+}
