@@ -1,0 +1,53 @@
+// BUY NOW COMPONENT
+table(width=max_w align="center" class="mobile-table")&attributes(tableAtt)
+  tr
+    td
+      table(width="100%")&attributes(tableAtt)
+        tr(class="mobile-hide")
+          td(style="background-image:url('img/tempoBuyImg.png')")
+            table()&attributes(tableAtt)
+              tr
+                td(align="left" width="249" class="mobile-table")
+                  table&attributes(tableAtt)
+                    +vSpacer(84)
+                    tr
+                      td
+                        table&attributes(tableAtt)
+                          tr
+                            +hSpacer(21)
+                            td
+                              font(style="font-size:24px;line-height:36px;color:#ffffff;" color="#ffffff")
+                                strong()  Tempo Takes you to your Destination
+                            +hSpacer(25)
+                    +vSpacer(34)
+                    tr
+                      td(align="center")
+                        +button({width:150, height:40, bgcolor:gold, radius:3, color:'#282828', font_size: 18, text: 'Buy Now'})
+                    +vSpacer(34)
+        tr(style="display:none;background-image:url('img/tempoBuyImg.png');background-size:cover;" class="mobile-show")
+          td
+            table()&attributes(tableAtt)
+              tr
+                td(align="left" width="190")
+                  table&attributes(tableAtt)
+                    +vSpacer(20)
+                    tr
+                      td
+                        table&attributes(tableAtt)
+                          tr
+                            +hSpacer(10)
+                            td
+                              font(style="font-size:24px;line-height:36px;color:#ffffff;" color="#ffffff")
+                                strong(style="font-weight:500;letter-spacing:1px;")  Tempo Takes you to your Destination 
+                    +vSpacer(34)
+                    tr
+                      td(align="center")
+                        +button({width:150, height:40, bgcolor:gold, radius:3, color:'#282828', font_size: 18, text: 'Buy Now'})
+                    +vSpacer(34)
+        +vSpacer(28)
+          //- td(width="351")
+          //-   table&attributes(tableAtt)
+          //-     tr
+          //-       td
+          //-         //- +addImg("img/tempoBuyImg.png", "Tempo Destination")
+          //-         img(src="img/tempoBuyImg.png" width="351" height="300")

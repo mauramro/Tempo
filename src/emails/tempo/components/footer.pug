@@ -1,0 +1,28 @@
+// FOOTER COMPONENT
+table(width=max_w align="center" class="mobile-table")&attributes(tableAtt)
+  tr
+    td
+      table(bgcolor=gold width="100%")&attributes(tableAtt)
+        +vSpacer(9)
+        tr
+          td(align="center")
+            table&attributes(tableAtt)
+              tr
+                td
+                  a(href="#" style="width:43px;height:42px;display:inline-block;background-image: url('img/facebook.png')")
+                +hSpacer(13)
+                td
+                  a(href="#" style="width:43px;height:42px;display:inline-block;background-image: url('img/twitter.png')")
+                +hSpacer(13)
+                td
+                  a(href="#" style="width:43px;height:42px;display:inline-block;background-image: url('img/in.png')")
+        +vSpacer(9)
+  +vSpacer(20)
+  tr
+    td(align="center")
+      table&attributes(tableAtt)
+        tr
+          td
+            font(style="font-size:13px;") Don't want to receive email Updates? 
+              a(href="#" style="color:"+gold+";") Unsubscribe here
+  +vSpacer(40)

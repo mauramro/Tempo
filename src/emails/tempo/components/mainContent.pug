@@ -1,0 +1,123 @@
+// MAIN CONTENT COMPONENT
+table(width=max_w align="center" class="mobile-table")&attributes(tableAtt)
+  tr
+    td
+      table(width="100%")&attributes(tableAtt)
+        tr(class="mobile-hide")
+          td
+            table&attributes(tableAtt)
+              tr
+                td
+                  img(src=img_path+'river.jpg' width="280" height="140")
+                +hSpacer(32)
+                td
+                  table&attributes(tableAtt)
+                    tr
+                      td
+                        font(style="font-size:18px;color:#282828;")
+                          strong(style="font-weight:100;") Your Heading Goes Here
+                    +vSpacer(20)
+                    tr
+                      td
+                        font(style="font-size:14px;line-height:24px;color:"+greyText+";font-weight:100;" color=greyText)  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                    +vSpacer(18)
+                    tr
+                      td
+                        +button({width:120, height:32, bgcolor:gold, radius:3, color:'#282828', font_size: 13, text: 'Learn More'})
+        tr(class="mobile-show" style="display:none;" align="center")
+          +hSpacer(20)
+          td()&attributes(tdCenter)
+            table&attributes(tableAtt)
+              tr
+                td&attributes(tdCenter)
+                  table&attributes(tableAtt)
+                    tr
+                      td
+                        img(src='img/river.jpg' width="280" height="140" class="mobile-table")
+              +vSpacer(20)
+              tr
+                td&attributes(tableAtt)
+                  table&attributes(tableAtt)
+                    tr
+                      td(align="center")
+                        font(style="font-size:18px;color:#282828;")
+                          strong(style="font-weight:100;") Your Heading Goes Here
+                    +vSpacer(20)
+                    tr
+                      td
+                        table&attributes(tableAtt)
+                          tr
+                            td
+                              font(style="font-size:14px;line-height:24px;color:"+greyText+";font-weight:100;" color=greyText)  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                    +vSpacer(18)
+                    tr
+                      td(align="center")
+                        +button({width:120, height:32, bgcolor:gold, radius:3, color:'#282828', font_size: 13, text: 'Learn More'})
+          +hSpacer(20)
+        +vSpacer(44)
+        tr
+          td
+            table&attributes(tableAtt)
+              tr
+                td(align="center")
+                  font(style="font-size:18px;color:#282828;")
+                    strong(style="font-weight:100;") Full width text block Content
+              +vSpacer(30)
+              tr
+                td
+                  table&attributes(tableAtt)
+                    tr
+                      +hSpacer(20)
+                      td
+                        font(style="font-size:14px;line-height:24px;color:"+greyText+";font-weight:100;" color=greyText)  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      +hSpacer(19)
+        +vSpacer(52)
+        tr(class="mobile-hide")
+          td
+            table&attributes(tableAtt)
+              tr
+                td
+                  table&attributes(tableAtt)
+                    tr
+                      td
+                        font(style="font-size:18px;color:#282828;")
+                          strong(style="font-weight:100;") Your Heading Goes Here
+                    +vSpacer(20)
+                    tr
+                      td
+                        font(style="font-size:14px;line-height:24px;color:"+greyText+";font-weight:100;" color=greyText)  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                    +vSpacer(18)
+                    tr
+                      td
+                        +button({width:120, height:32, bgcolor:gold, radius:3, color:'#282828', font_size: 13, text: 'Learn More'})
+                +hSpacer(32)
+                td
+                  img(src='img/river.jpg' width="280" height="140")
+        tr(style="display:none" class="mobile-show" align="center")
+          +hSpacer(20)
+          td
+            table&attributes(tableAtt)
+              tr
+                td
+                  table&attributes(tableAtt)
+                    tr
+                      td(align="center")
+                        font(style="font-size:18px;color:#282828;")
+                          strong(style="font-weight:100;") Your Heading Goes Here
+                    +vSpacer(20)
+                    tr
+                      td
+                        font(style="font-size:14px;line-height:24px;color:"+greyText+";font-weight:100;" color=greyText)  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                    +vSpacer(18)
+                    tr
+                      td(align="center")
+                        +button({width:120, height:32, bgcolor:gold, radius:3, color:'#282828', font_size: 13, text: 'Learn More'})
+                    +vSpacer(25)
+              tr
+                td&attributes(tdCenter)
+                  table&attributes(tableAtt)
+                    tr
+                      td
+                        img(src='img/river.jpg' width="280" height="140" class="mobile-table")
+          +hSpacer(20)
+        +vSpacer(34)
